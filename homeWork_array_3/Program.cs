@@ -37,7 +37,7 @@ namespace homeWork_array_3
 
             for (int i = 1; i < numbers.Length - 1; i++)
             {
-                if (numbers[i] > numbers[i - 1] && numbers[i] > numbers[i + 1])
+                if (numbers[i - 1] < numbers[i] && numbers[i] > numbers[i + 1])
                 {
                     Console.Write(numbers[i] + " ");
                 }
