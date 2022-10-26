@@ -43,9 +43,11 @@ namespace homeWork_array_3
                 }
             }
 
-            if (numbers[numbers.Length - 1] > numbers[numbers.Length - 2]) 
+            int lastNUmber = numbers.Length - 1;
+
+            if (numbers[lastNUmber - 1] < numbers[lastNUmber]) 
             {
-                Console.Write(numbers[numbers.Length - 1]);
+                Console.Write(numbers[lastNUmber]);
             }
 
             Console.ReadKey();
